@@ -7,3 +7,8 @@
 
 import Foundation
 
+struct Agent {
+    var name: String
+    var about: String
+    var avatar: String
+}
