@@ -22,7 +22,6 @@ class TableViewCell: UITableViewCell {
         let imgHome = UIImageView()
         imgHome.tintColor = .label
         
-        
         return imgHome
     }()
     
@@ -44,9 +43,9 @@ class TableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public func configure(with image: UIImage, and label: String) {
-        self.imageIconHome.image = image
-        self.lbAgentsHome.text = label
+    public func configure(with agent: Agent) {
+        self.imageIconHome.image = UIImage(named: agent.avatar)
+        self.lbAgentsHome.text = agent.name
     }
     
     // MARK: - Setup UI

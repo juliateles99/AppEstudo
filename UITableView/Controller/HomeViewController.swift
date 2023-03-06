@@ -68,8 +68,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         
         cell.accessoryType = .disclosureIndicator
-        let image: UIImage = UIImage(named: agents[indexPath.row].avatar) ?? UIImage()
-        cell.configure(with: image, and: arrayAgents[indexPath.row])
+        cell.configure(with: agents[indexPath.row])
 
         return cell
     }
