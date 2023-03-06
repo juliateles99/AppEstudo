@@ -46,6 +46,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(tableView)
+        initDataSource()
         constrainTableView()
         title = "Agentes"
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")

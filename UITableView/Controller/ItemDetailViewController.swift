@@ -37,12 +37,10 @@ class ItemDetailViewController: UIViewController {
         return lbAgentsDesciption
     }()
     
-    
-    
-     private func configure(with image: UIImage, and label: String, and description: String) {
-        self.imageDetails.image = image
-        self.labelAgentsText.text = label
-        self.labelAgentsDescription.text = description
+     private func configure() {
+         self.imageDetails.image = UIImage(named: agent!.avatar)!
+         self.labelAgentsText.text = agent?.name
+         self.labelAgentsDescription.text = agent?.about
     }
     
     override func viewDidLoad() {
@@ -50,6 +48,11 @@ class ItemDetailViewController: UIViewController {
         view.backgroundColor = .white
         title = "Detalhes do Agente"
         self.setupUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        configure()
     }
     
     private func setupUI() {
