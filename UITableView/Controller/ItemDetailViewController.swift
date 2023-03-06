@@ -9,6 +9,8 @@ import UIKit
 
 class ItemDetailViewController: UIViewController {
     
+    public var agent: Agent?
+    
     private let imageDetails: UIImageView = {
         let imgDetails = UIImageView()
         imgDetails.layer.cornerRadius = imgDetails.frame.width / 2
