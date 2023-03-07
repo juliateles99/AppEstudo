@@ -13,7 +13,6 @@ class ItemDetailViewController: UIViewController {
     
     private let imageDetails: UIImageView = {
         let imgDetails = UIImageView()
-        imgDetails.layer.cornerRadius = imgDetails.frame.width / 2
         imgDetails.layer.masksToBounds = true
         imgDetails.contentMode = .scaleAspectFit
         
@@ -68,9 +67,6 @@ class ItemDetailViewController: UIViewController {
         
         view.addSubview(stackView)
         
-       //  imageDetails.layer.cornerRadius =  imageDetails.frame.height / 2
-       //  imageDetails.layer.masksToBounds = true
-        
         NSLayoutConstraint.activate([
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
             stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
@@ -79,7 +75,8 @@ class ItemDetailViewController: UIViewController {
             imageDetails.widthAnchor.constraint(equalToConstant: 400),
             imageDetails.heightAnchor.constraint(equalToConstant: 400),
  ])
-        
+        imageDetails.layer.cornerRadius =  imageDetails.frame.height / 2
+        imageDetails.layer.masksToBounds = true
     }
     
 }
