@@ -5,13 +5,6 @@
 //  Created by Julia Teles on 14/02/23.
 //
 
-// Diferenca de contentview e view
-// Quando colocar isActive e quando nao colocar
-// Diferenca de UIIMage e UIImageView
-// o que é a required init
-// dificuldade em arredondar imagens
-// dificuldade na organizacao dos codigos
-
 import UIKit
 
 class TableViewCell: UITableViewCell {

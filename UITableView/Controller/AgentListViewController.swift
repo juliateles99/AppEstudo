@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class AgentListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     // MARK: - DataSource
     var agents: [Agent] = []

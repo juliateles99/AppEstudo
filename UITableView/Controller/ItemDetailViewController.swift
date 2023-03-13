@@ -11,13 +11,7 @@ class ItemDetailViewController: UIViewController {
     
     public var agent: Agent?
     
-    private let imageDetails: UIImageView = {
-        let imgDetails = UIImageView()
-        imgDetails.layer.masksToBounds = true
-        imgDetails.contentMode = .scaleAspectFit
-        
-        return imgDetails
-    }()
+    private var imageDetails: UIImageView = UIImageView(frame: .zero)
     
     private let labelAgentsText: UILabel = {
         let lbAgentsDetails = UILabel()
@@ -37,7 +31,12 @@ class ItemDetailViewController: UIViewController {
     }()
     
      private func configure() {
-         self.imageDetails.image = UIImage(named: agent!.avatar)!
+         if let avatar = agent?.avatar, let agentImage = UIImage(named: avatar) {
+             imageDetails = UIImageView(image: agentImage)
+             imageDetails.contentMode = .scaleAspectFit
+         }
+         imageDetails.layoutSubviews()
+         
          self.labelAgentsText.text = agent?.name
          self.labelAgentsDescription.text = agent?.about
     }
@@ -62,6 +61,7 @@ class ItemDetailViewController: UIViewController {
         stackView.addArrangedSubview(labelAgentsDescription)
         stackView.alignment = .center
         stackView.axis = .vertical
+        stackView.distribution = .equalCentering
 
         stackView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -70,13 +70,16 @@ class ItemDetailViewController: UIViewController {
         NSLayoutConstraint.activate([
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
             stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor,  constant: -30),
+            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
             
-            imageDetails.widthAnchor.constraint(equalToConstant: 400),
-            imageDetails.heightAnchor.constraint(equalToConstant: 400),
+            imageDetails.widthAnchor.constraint(equalToConstant: imageDetails.frame.size.width),
+           imageDetails.heightAnchor.constraint(equalToConstant: imageDetails.frame.size.height),
  ])
-        imageDetails.layer.cornerRadius =  imageDetails.frame.height / 2
+        imageDetails.layoutIfNeeded()
+        imageDetails.layer.cornerRadius = imageDetails.frame.size.height / 2
+        print(imageDetails.frame.size.height / 2)
         imageDetails.layer.masksToBounds = true
+        imageDetails.translatesAutoresizingMaskIntoConstraints = false
     }
     
 }

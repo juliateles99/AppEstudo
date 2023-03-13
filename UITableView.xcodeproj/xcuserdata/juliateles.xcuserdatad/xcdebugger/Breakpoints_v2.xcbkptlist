@@ -7,17 +7,64 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A62373F7-2E65-46C8-916E-948B705A2D9E"
+            uuid = "2EC67025-8EAD-4773-9A56-5E7ADF71BEE1"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UITableView/Controller/ItemDetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "setupUI()"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "configure()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2EC67025-8EAD-4773-9A56-5E7ADF71BEE1 - 5bad4c7ff591d736"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UITableView.ItemDetailViewController.configure() -&gt; ()"
+                  moduleName = "UITableView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juliateles/Desktop/UITableView%20Teste/UITableView/Controller/ItemDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "2EC67025-8EAD-4773-9A56-5E7ADF71BEE1 - 5bad4c7ff591d736"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UITableView.ItemDetailViewController.configure() -&gt; ()"
+                  moduleName = "UITableView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juliateles/Desktop/UITableView%20Teste/UITableView/Controller/ItemDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "286">
+               </Location>
+               <Location
+                  uuid = "2EC67025-8EAD-4773-9A56-5E7ADF71BEE1 - 5bad4c7ff591d736"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UITableView.ItemDetailViewController.configure() -&gt; ()"
+                  moduleName = "UITableView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juliateles/Desktop/UITableView%20Teste/UITableView/Controller/ItemDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "412">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
