@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "skye@1x.jpeg",
+      "filename" : "skye@1x.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "skye@2x.jpeg",
+      "filename" : "skye@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "skye@3x.jpeg",
+      "filename" : "skye@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

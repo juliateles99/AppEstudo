@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Phoenix.jpg",
+      "filename" : "phoenix@1x.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "phoenix@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "phoenix@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }
