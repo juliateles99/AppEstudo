@@ -9,6 +9,7 @@ import UIKit
 
 class ItemDetailViewController: UIViewController {
     
+    // MARK: - DataSource
     public var agent: Agent?
     
     private var imageDetails: UIImageView = UIImageView(frame: .zero)
@@ -41,6 +42,7 @@ class ItemDetailViewController: UIViewController {
          self.labelAgentsDescription.text = agent?.about
     }
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white

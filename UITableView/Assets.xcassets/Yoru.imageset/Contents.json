@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Yoru.jpg",
+      "filename" : "yoru@1x.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "yoru@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "yoru@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }
